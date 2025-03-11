@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        NODE_VERSION = "22.x"
+    }
+
     stages {
         stage('Install dependencies') {
             steps {
